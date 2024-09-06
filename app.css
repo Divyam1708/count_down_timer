@@ -1,0 +1,98 @@
+:root{
+    /* --time_color:White; */
+}
+
+body{
+    background-color: black;
+    color: var(--time_color);
+}
+
+
+
+p{
+    all: unset;
+}
+
+input{
+    all: unset;
+}
+.main_cotainer{
+    max-width: 88em;
+    height: 80vh;
+    padding: 1em;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid yellowgreen; */
+}
+
+
+.inner_section_1{
+    width: 25em;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+    background-color: rgb(250, 235, 215,0.4);
+}
+
+
+.main_input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.inner_input_part_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inner_input_part_2{
+    
+}
+
+#submit_button{
+    margin: 1em;
+    padding: 0.5em;
+    background-color: rgb(228, 97, 97,0.6);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.time_input_class{
+    max-width: 2em;
+    aspect-ratio: 1/1;
+    /* margin: 1em; */
+    border: 1px solid black;
+    font-size: 4em;
+    text-align: center;
+    padding: 0;
+    color: rgb(61, 180, 45);
+    border-radius: 15px;
+    user-select: none;
+}
+
+.inner_section_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+.time_box_style{
+    margin-inline: 0.5em;
+    padding: 0.5em;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 2em;
+    color: rgb(64, 224, 208,0.6);
+}
+.time_box_style p{
+    font-size: 2em;
+    user-select: none;
+}

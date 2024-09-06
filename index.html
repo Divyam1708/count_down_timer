@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app(mobile).css">
+</head>
+
+<body>
+    <section class="main_cotainer">
+        <section class="inner_section_1">
+            
+            <form action="" class="main_input" id="time_form">
+
+                <div class="inner_input_part_1">
+                    <input type="number" class="time_input_class" name="for_hours" id="for_hours" min="00" max="23"
+                        value="00">
+    
+                    <input type="number" class="time_input_class" name="for_minutes" id="for_minutes" min="00" max="59"
+                        value="00">
+    
+                    <input type="number" class="time_input_class" name="for_seconds" id="for_seconds" min="00" max="59"
+                        value="00">
+                </div>
+
+
+                <div class="inner_input_part_2">
+                    <input type="submit" value="Start Counter" id="submit_button">
+                </div>
+                
+            </form>
+        </section>
+
+        <section class="inner_section_2">
+            <section class="time_box_style" id="hours" value="123">
+                <p user-select="none">00</p>
+            </section>
+            <section class="time_box_style" id="minutes">
+                <p user-select="none">00</p>
+            </section>
+            <section class="time_box_style" id="seconds">
+                <p user-select="none">00</p>
+            </section>
+        </section>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
