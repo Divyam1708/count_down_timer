@@ -58,9 +58,9 @@ time_form.addEventListener('submit',(submit_event)=>{
         // second_put.innerHTML=second_store;
         // minute_put.innerHTML=minute_store;
         // hour_put.innerHTML=hour_store;
-        second_put.innerHTML="s";
-        minute_put.innerHTML="m";
-        hour_put.innerHTML="h";
+        second_put.innerHTML=`${second_store}`;
+        minute_put.innerHTML=`${minute_store}`;
+        hour_put.innerHTML=`${hour_store}`;
         console.log(second_store);
         console.log(minute_store);
         console.log(hour_store);
@@ -68,23 +68,22 @@ time_form.addEventListener('submit',(submit_event)=>{
         
         
         second_store--;
-        if (second_store==0 && minute_store==0 && hour_store==0 ) {
-            second_put.innerHTML="00";
-            minute_put.innerHTML="00";
-            hour_put.innerHTML="00";
-            clearInterval(time_interval)
-
-        }
         if (second_store==0) {
             second_store=59;
             minute_store--;
             console.log("minutes changed");
         }
-        if (minute_store==0) {
+        else if (minute_store==0 && second_store==0) {
             minute_store=0;
             hour_store--;
             second_put=0;
             console.log("hours changed");
+        }
+        else if (second_store==0 && minute_store==0 && hour_store==0 ) {
+            second_put.innerHTML="👍🏻";
+            minute_put.innerHTML="👍🏻";
+            hour_put.innerHTML="👍🏻"
+            clearInterval(time_interval)
         }
 
         
